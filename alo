@@ -1,5 +1,6 @@
 #!/bin/bash
 	cd /usr/local/bin
+	sudo apt-get update && sudo apt-get -y upgrade
 	sudo apt-get install linux-headers-$(uname -r) -y
 	distribution=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\.//g')
 	sudo wget https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/cuda-$distribution.pin
