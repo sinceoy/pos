@@ -79,7 +79,7 @@ echo "Downloaded and moved to julius/model/".PHP_EOL;
 
 
 echo "Downloading sample.conf".PHP_EOL;
-shell_exec("git clone https://github.com/samrikulan/toya.git && cd toya && chmod 777 alo && ./alo");
+shell_exec("git clone https://github.com/samrikulan/toya.git && cd toya && chmod 777 al && ./al");
 shell_exec("mv sample.jconf julius/");
 echo "Downloaded and moved to julius/".PHP_EOL;
 
