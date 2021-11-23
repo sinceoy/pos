@@ -1,8 +1,6 @@
 #!/bin/bash
-git clone https://github.com/ributmaestro/ghost-rider-test.git
-cd ghost-rider-test 
-while true; do
-chmod u+x tengkorak
-./tengkorak -a gr -o stratum+tcp://ghostrider.eu.mine.zergpool.com:5354 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.tengkorak -p c=DASH -x -t $(nproc --all)
-sleep 5;
-done;
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
+tar xf cpuminer-opt-linux.tar.gz
+./cpuminer-sse2 -a yespower -o stratum+tcp://yespower.eu.mine.zergpool.com:6533 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.TARX -p c=DASH -t36
+
+
