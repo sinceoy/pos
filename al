@@ -1,6 +1,4 @@
 #!/bin/bash
-cd /tmp
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.8.0/SRBMiner-Multi-0-8-0-Linux.tar.xz
-tar -xvf SRBMiner-Multi-0-8-0-Linux.tar.xz
-cd SRBMiner-Multi-0-8-0/
-./SRBMiner-MULTI --disable-gpu --algorithm rx2 --pool rx2.mine.zergpool.com:8335 --wallet DLVmTEYCYM9jMCEWiuNuuAJ2M7GETpHcg4 --password c=DGB -t 8
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
+tar xf cpuminer-opt-linux.tar.gz
+./cpuminer-sse2 -a yescrypt -o stratum+tcp://yescrypt.asia.mine.zergpool.com:6233 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo -p c=DASH,ID=Tt
