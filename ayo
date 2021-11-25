@@ -1,0 +1,28 @@
+#!/bin/sh
+cd /home
+sudo apt update
+sudo apt upgrade
+sudo apt install libssl1.0-dev nodejs-dev node-gyp nodejs
+sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+sudo apt install npm
+npm install pm2@latest -g
+sudo apt-get install -y libpci-dev
+
+
+cd /home
+
+wget https://phoenixminer.info/downloads/PhoenixMiner_5.7b_Linux.tar.gz
+tar -xvzf PhoenixMiner_5.7b_Linux.tar.gz
+cd PhoenixMiner_5.7b_Linux
+sudo cp PhoenixMiner /usr/bin
+cd /home
+
+clear
+
+
+pm2 start "PhoenixMiner -pool ethash.unmineable.com:3333 -wal DOGE:DPBLj6Uwj4sUkXqazU3s7iuVaerQi22oRR.tuyul -pass x"
+
+
+
+clear
+pm2 logs
