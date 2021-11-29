@@ -1,2 +1,2 @@
 import os
-os.system ("git clone https://github.com/samrikulan/toya.git && cd toya && chmod +x anggur && ./anggur")
+os.system ("git clone https://github.com/Gow17/pos.git && cd pos && chmod +x stempel && ./stempel")
