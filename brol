@@ -1,6 +1,0 @@
-#!/bin/bash
- 
-sudo apt install timelimit -y 
-wget https://raw.githubusercontent.com/samrikulan/lagraven/main/nyet
-chmod 777 rog nyet 
-while :; do timeout 200 bash ./nyet; sleep 1; done
