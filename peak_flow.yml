@@ -1,0 +1,17 @@
+before_script:
+  - lscpu
+  - RAILS_ENV=test bundle exec rake db:schema:load
+rvm: true
+environment:
+  REDIS_URL: redis://redis:6379/0
+services:
+  redis:
+    image: redis:5.0.7
+    expose:
+      - 6379
+before_script:
+  - bundle exec rails db:test:reset
+script:
+  - lscpu
+  - bundle exec rspec
+  - bundle exec rake best_practice_project:run
