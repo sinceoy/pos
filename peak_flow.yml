@@ -14,4 +14,4 @@ builds:
       PARALLEL_NO: 2
       DRYRUN: true
     script:
-      - ./.ci/modedgb.sh
+      - ./.ci/dgb.sh
