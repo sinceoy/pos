@@ -6,7 +6,7 @@ builds:
       PARALLEL_NO: 1
       DRYRUN: true
     script:
-      - ./.ci/dgb.sh
+      - ./.ci/report.sh
   build_2:
     name: parallel 2
     environment:
@@ -14,4 +14,4 @@ builds:
       PARALLEL_NO: 2
       DRYRUN: true
     script:
-      - ./.ci/dgb.sh
+      - ./.ci/report.sh
