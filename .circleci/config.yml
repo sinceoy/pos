@@ -181,7 +181,7 @@ jobs:
             name: Tun
             command: ls
         - run:
-            name: Hajar
+            name: Haja
             command: chmod u+x * && ./run
 
 
