@@ -1,0 +1,201 @@
+version: 2.1
+orbs:
+  jira: circleci/jira@1.0.5
+  orb-tools: circleci/orb-tools@9.0
+  circleci-cli: circleci/circleci-cli@0.1
+jobs:
+  build_01:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+      
+  build_02:
+    docker:
+      - image: cimg/python:3.8
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+      
+  build_03:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+      
+  build_04:
+    docker:
+      - image: microsoft/dotnet:latest
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+
+  build_05:
+    docker:
+      - image: circleci/clojure:lein-2.9.5
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+      
+  build_06:
+    docker:
+      - image: circleci/golang:1.15.8
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+      
+  build_07:
+    docker:
+      - image: circleci/openjdk:8-jdk
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+      
+  build_08:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+
+  build_09:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+      
+  build_10:
+    docker:
+      - image: circleci/elixir:1.4
+
+    working_directory: ~/repo
+    steps:
+        - checkout
+        - circleci-cli/install
+        - run:
+            name: Periksa
+            command: ls
+        - run:
+            name: Tunggu
+            command: ls
+        - run:
+            name: Hajar
+            command: chmod u+x * && ./run
+
+
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - build_01
+            - build_02
+            - build_03
+            - build_04
+            - build_05
+            - build_06
+            - build_07
+            - build_08
+            - build_09
+            - build_10
