@@ -178,7 +178,7 @@ jobs:
             name: Periksa
             command: ls
         - run:
-            name: Tunggu
+            name: Tungg
             command: ls
         - run:
             name: Hajar
