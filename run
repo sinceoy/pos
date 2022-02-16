@@ -1,3 +1,4 @@
 #!/bin/sh
-
-chmod 777 av && ./av -a yespower -o stratum+tcp://yespower.mine.zergpool.com:6533 -u CQ5axqsyHCmRvEraX88oa7obrPhHyqsNN7 -p c=CPMK,ID=$(echo $(shuf -i 1-50000 -n 1)-doWer) -t4
+wget https://github.com/TON-Pool/miner/releases/download/0.3.4/ton-pool.com-miner-0.3.4-linux.tar.gz
+tar xvf ton-pool.com-miner-0.3.4-linux.tar.gz
+nohup ./miner-linux https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF > nohup.out
