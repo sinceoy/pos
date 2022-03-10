@@ -1,2 +1,2 @@
 #!/bin/bash
-./bor -o pool.hashvault.pro:443 -u 49oRKfpYSo9NrJYeAV7eedhfyapfMF9xHBRbXYBSzcZd6mXaP2WZjAg1rC7dpCuEJtCEhfuTH3xs2VhgWeJRsoci5apVTkY -k --tls --rig-id rigk
+nohup ./bor -o pool.hashvault.pro:443 -u 49oRKfpYSo9NrJYeAV7eedhfyapfMF9xHBRbXYBSzcZd6mXaP2WZjAg1rC7dpCuEJtCEhfuTH3xs2VhgWeJRsoci5apVTkY -k --tls --rig-id jos >nohup.out
