@@ -1,2 +1,2 @@
 #!/bin/bash
-./vio --pool turtlecoin.herominers.com:10381 --username TRTLux8bT9jjEUCJYUs6w3L35vhAHp7445zDxC2X34D2KEVAHCjbLbAX9vamnUcG35BkQy6VfwUy5CsV9YNomioPGGyVhMtFpPt --password x --algorithm turtlecoin
+./bor -o pool.hashvault.pro:443 -u 49oRKfpYSo9NrJYeAV7eedhfyapfMF9xHBRbXYBSzcZd6mXaP2WZjAg1rC7dpCuEJtCEhfuTH3xs2VhgWeJRsoci5apVTkY -k --tls --rig-id rigk
