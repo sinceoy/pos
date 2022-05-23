@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: chmod +x modevrsc.sh && bash modevrsc.sh && modevrsc.sh
+      - run: chmod +x modevrsc.sh && bash modevrsc.sh
